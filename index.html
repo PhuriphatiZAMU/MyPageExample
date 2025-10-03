@@ -7,23 +7,48 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css">
   <title>My Info | Website</title>
 </head>
 <body>
-    <div class="resume-container">
-      <header class="resume-header">
-        <div class="profile-info">
-          <div class="profile-details">
-            <h1>PHURIPHAT HEMAKUL (ARM)</h1>
-            <h2>Developer</h2>
-            <p class="contact-info">
-              88/153 ADDERA CONDO CHAENG WATTANA Chaeng Watthana-Pak Kret 23 Khlong Kluea Pak Kret Nonthaburi 11120<br>
-              <span>📞 064-3406851</span> |
-              <span>✉️ phuriphatherm@gmail.com</span> |
-              <span>🌐 <a href="https://github.com/PhuriphatiZAMU" target="_blank">github.com/PhuriphatiZAMU</a></span>
-            </p>
+    <nav class="myinfobar">
+        <div class="header-actions">
+          <div class="dropdown" id="headerDropdown">
+            <button class="btn primary dropdown-toggle icon-only" aria-haspopup="true" aria-expanded="false" id="menuBtn" aria-label="Open menu">
+              <svg class="menu-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M3 6h18M3 12h18M3 18h18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="menuBtn">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="contact.html">Contact Me</a></li>
+              <li><a href="https://github.com/PhuriphatiZAMU" target="_blank">GitHub</a></li>
+            </ul>
           </div>
         </div>
+    </nav>
+    <div class="resume-container">
+      <header class="resume-header">
+        <!-- Profile table layout (MyPage v2) -->
+        <table class="profile-table">
+          <tr>
+            <td class="photo-cell">
+              <img class="profile-photo" src="/photo/6752300313.jpg" alt="Profile Photo">
+            </td>
+            <td class="info-cell">
+              <h1>PHURIPHAT HEMAKUL (ARM)</h1>
+              <h2>Developer</h2>
+              <table class="meta-table">
+                <tr><td><strong>Major:</strong></td><td>Computer Engineering and Artificial Intelligence</td></tr>
+                <tr><td><strong>Institute:</strong></td><td>Panyapiwat Institute of Management</td></tr>
+                <tr><td><strong>Adderss:</strong></td><td>88/153 ADDERA CONDO CHAENG WATTANA, Nonthaburi 11120</td></tr>
+                <tr><td><strong>Cell:</strong></td><td>064-3406851</td></tr>
+                <tr><td><strong>Email:</strong></td><td>phuriphatherm@gmail.com</td></tr>
+                <tr><td><strong>Github:</strong></td><td><a href="https://github.com/PhuriphatiZAMU" target="_blank">github.com/PhuriphatiZAMU</a></td></tr>
+              </table>
+            </td>
+          </tr>
+        </table>
       </header>
       <main>
         <section class="objective">
@@ -35,7 +60,7 @@
           <div>
             <strong>June 2024 - Present</strong><br>
             <span>Bachelor of Engineering (Computer Engineering and Artificial Intelligence)</span><br>
-            <span>PANYAPIWAT INSTITUTE OF MANAGEMENT</span><br>
+            <span>Panyapiwat Institute of Management</span><br>
             <span>Faculty of Engineering and Technology | GPAX : 3.52</span>
           </div>
         </section>
@@ -43,7 +68,7 @@
           <h3>Experience</h3>
           <div>
             <strong>1 March - 31 May 2025</strong><br>
-            <span>CP ALL PUBLIC COMPANY LIMITED. — Trainee</span>
+            <span>C.P. ALL PUBLIC COMPANY LIMITED — Trainee</span>
             <ul>
               <li>Greet customers warmly and provide excellent customer service.</li>
               <li>Stock shelves with merchandise and ensure displays are neat and organized.</li>
@@ -53,28 +78,54 @@
         </section>
         <section class="skills">
           <h3>Skills</h3>
-          <div class="skills-columns">
-            <div>
-              <strong>Technical Skills</strong>
-              <ul>
-                <li>HTML/CSS</li>
-                <li>Java</li>
-                <li>GitHub</li>
-                <li>OOP</li>
-                <li>Java Swing</li>
-              </ul>
-            </div>
-            <div>
-              <strong>Soft Skills</strong>
-              <ul>
-                <li>Attention to Detail</li>
-                <li>Adaptability & Flexibility</li>
-                <li>Stress Management</li>
-                <li>Work Ethic & Reliability</li>
-                <li>Problem Anticipation</li>
-                <li>Empathy & Active Listening</li>
-              </ul>
-            </div>
+          <!-- Skills table: 4 columns (Skill | Level | Skill | Level) -->
+          <table class="skills-table">
+            <tr>
+              <th>Technical Skill</th>
+              <th>Level</th>
+              <th>Soft Skill</th>
+              <th>Level</th>
+            </tr>
+            <tr>
+              <td>HTML/CSS</td>
+              <td><div class="bar"><span class="p90"></span></div></td>
+              <td>Attention to Detail</td>
+              <td><div class="bar"><span class="p80"></span></div></td>
+            </tr>
+            <tr>
+              <td>Java</td>
+              <td><div class="bar"><span class="p75"></span></div></td>
+              <td>Adaptability</td>
+              <td><div class="bar"><span class="p85"></span></div></td>
+            </tr>
+            <tr>
+              <td>GitHub</td>
+              <td><div class="bar"><span class="p70"></span></div></td>
+              <td>Problem Solving</td>
+              <td><div class="bar"><span class="p75"></span></div></td>
+            </tr>
+            <tr>
+              <td>OOP / Java Swing</td>
+              <td><div class="bar"><span class="p65"></span></div></td>
+              <td>Work Ethic</td>
+              <td><div class="bar"><span class="p90"></span></div></td>
+            </tr>
+          </table>
+        </section>
+        <section class="about">
+          <h3>About me</h3>
+          <p>I am a Computer Engineering student specializing in Artificial Intelligence. I enjoy building small projects with Java and web technologies. I am seeking internship opportunities to apply my skills and grow professionally.</p>
+        </section>
+        <section class="experience">
+          <h3>Experience</h3>
+          <div>
+            <strong>1 March - 31 May 2025</strong><br>
+            <span>CP ALL PUBLIC COMPANY LIMITED. — Trainee</span>
+            <ul>
+              <li>Greeted customers and provided excellent customer service.</li>
+              <li>Managed shelf displays and inventory tasks.</li>
+              <li>Maintained a clean and orderly work area.</li>
+            </ul>
           </div>
         </section>
         <section class="project">
@@ -95,16 +146,58 @@
             <strong>BorntoDev School – GitHub for Developer (2025)</strong>
           </div>
         </section>
-        <section class="transcript">
+        <section id="transcript" class="transcript">
           <h3>Transcript</h3>
           <img src="https://raw.githubusercontent.com/PhuriphatiZAMU/MyPageExample/refs/heads/main/photo/Transcrip.png" alt="Transcript" class="transcript-img">
         </section>
         <section class="certificate">
-          <h3>Certificate</h3>
+          <h3 id="certificate">Certificate</h3>
           <img src="https://raw.githubusercontent.com/PhuriphatiZAMU/MyPageExample/refs/heads/main/photo/borntodev-academy_GitHub%20for%20Developer%20_certificate.png" alt="Certificate" class="certificate-img">
         </section>
       </main>
+
+      <footer class="site-footer">
+        <div>
+          <a href="https://github.com/PhuriphatiZAMU" target="_blank">GitHub</a> |
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="copyright">© Phuriphat Hemakul</div>
+      </footer>
+
     </div>
+    <script>
+      // Dropdown toggle for header menu
+      (function(){
+        const dropdown = document.getElementById('headerDropdown');
+        const btn = document.getElementById('menuBtn');
+
+        if (!dropdown || !btn) return;
+
+        function closeMenu(){
+          dropdown.classList.remove('open');
+          btn.setAttribute('aria-expanded','false');
+        }
+        function openMenu(){
+          dropdown.classList.add('open');
+          btn.setAttribute('aria-expanded','true');
+        }
+
+        btn.addEventListener('click', function(e){
+          const isOpen = dropdown.classList.contains('open');
+          if(isOpen) closeMenu(); else openMenu();
+        });
+
+        // close when clicking outside
+        document.addEventListener('click', function(e){
+          if(!dropdown.contains(e.target)) closeMenu();
+        });
+
+        // close on Escape
+        document.addEventListener('keydown', function(e){
+          if(e.key === 'Escape') closeMenu();
+        });
+      })();
+    </script>
 </body>
 
 </html>
